@@ -8,6 +8,16 @@ define Device/clx_s20p
 endef
 TARGET_DEVICES += clx_s20p
 
+define Device/clx_s20l
+  DEVICE_VENDOR := CLX
+  DEVICE_MODEL := S20L
+  DEVICE_DTS := mt7986a-clx-s20l
+  DEVICE_DTS_DIR := ../dts-ext
+  DEVICE_PACKAGES := kmod-usb3 automount f2fsck mkf2fs
+  IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
+endef
+TARGET_DEVICES += clx_s20l
+
 define Device/cudy_tr3000-v1-mtkuboot
   DEVICE_VENDOR := Cudy
   DEVICE_MODEL := TR3000

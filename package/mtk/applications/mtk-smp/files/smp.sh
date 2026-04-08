@@ -750,6 +750,7 @@ setup_model()
 	bananapi,bpi-r3* |\
 	buffalo,wsr-6000ax8 |\
 	clx,s20p |\
+	clx,s20l |\
 	dlink,aquila-pro-ai-m60-a1 |\
 	glinet,gl-mt6000 |\
 	iptime,ax7800m-6e |\
