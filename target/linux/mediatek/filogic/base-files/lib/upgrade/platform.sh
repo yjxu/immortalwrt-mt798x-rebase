@@ -127,7 +127,8 @@ platform_do_upgrade() {
 	xiaomi,mi-router-ax3000t-ubootmod|\
 	xiaomi,redmi-router-ax6000-ubootmod|\
 	xiaomi,mi-router-wr30u-ubootmod|\
-	zyxel,ex5601-t0-ubootmod)
+	zyxel,ex5601-t0-ubootmod|\
+	zyxel,wx5600-t0-ubootmod)
 		fit_do_upgrade "$1"
 		;;
 	acer,predator-w6|\
@@ -142,7 +143,7 @@ platform_do_upgrade() {
 	glinet,gl-x3000|\
 	glinet,gl-xe3000|\
 	huasifei,wh3000-emmc|\
-	huasifei,wh3000-pro|\
+	huasifei,wh3000-pro-emmc|\
 	smartrg,sdg-8612|\
 	smartrg,sdg-8614|\
 	smartrg,sdg-8622|\
@@ -167,7 +168,8 @@ platform_do_upgrade() {
 		;;
 	buffalo,wsr-6000ax8|\
 	cudy,wr3000h-v1|\
-	cudy,wr3000p-v1)
+	cudy,wr3000p-v1|\
+	huasifei,wh3000-pro-nand)
 		CI_UBIPART="ubi"
 		nand_do_upgrade "$1"
 		;;
@@ -180,6 +182,7 @@ platform_do_upgrade() {
 	yuncore,ax835)
 		default_do_upgrade "$1"
 		;;
+	dlink,aquila-pro-ai-e30-a1|\
 	dlink,aquila-pro-ai-m30-a1|\
 	dlink,aquila-pro-ai-m60-a1)
 		fw_setenv sw_tryactive 0
@@ -365,7 +368,7 @@ platform_copy_config() {
 	glinet,gl-x3000|\
 	glinet,gl-xe3000|\
 	huasifei,wh3000-emmc|\
-	huasifei,wh3000-pro|\
+	huasifei,wh3000-pro-emmc|\
 	jdcloud,re-cp-03|\
 	nradio,c8-668gl|\
 	smartrg,sdg-8612|\
